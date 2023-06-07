@@ -10,3 +10,7 @@ This repo has the client web-app for a restaurant ordering system.
 + Storage Bucket: CloudFlare R2.
 
 Serverside Rendered
+
+## Env variables:
+    UPSTASH_REDIS_REST_URL -> STRING
+    UPSTASH_REDIS_REST_TOKEN -> STRING
