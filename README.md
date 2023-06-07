@@ -1,6 +1,6 @@
 # Restaurant client
 
-This repo has the client web-app a restaurant ordering system.
+This repo has the client web-app for a restaurant ordering system.
 
 ## Tech stack:
 + FE: Vue3 and NuxtJS
