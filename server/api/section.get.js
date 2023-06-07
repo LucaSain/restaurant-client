@@ -1,10 +1,6 @@
-//import upstash redis
-import { Redis } from "@upstash/redis"
-const redis = Redis.fromEnv();
+import redis from "~/utils/redis";
 
 export default defineEventHandler(async (event) => {
-    //get query params
-
 
     const aperitive = await redis.hgetall('aperitive');
     const main = await redis.hgetall('main');
