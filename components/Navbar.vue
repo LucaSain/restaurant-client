@@ -7,7 +7,7 @@ const { data, tableNumber, orderId, loc } = storeToRefs(store);
 const pageOrder = ref(0);
 const payment = ref('cash');
 
-const total = ref(0);
+
 
 const setPayment = (how) => {//  
     payment.value = how;
@@ -41,8 +41,6 @@ const Order = async () => {
     pageOrder.value = 1;
     const orderid = await $fetch('/api/id');
     orderId.value = orderid;
-
-
     const channel = ably.channels.get('orders');
     await channel.publish('orders', { cost: tot.value, id: 'a' + orderId.value, payment: payment.value, table: tableNumber.value, 'aperitive': data.value[0], 'main': data.value[1], 'desert': data.value[2], 'drinks': data.value[3] });
     data.value = [[], [], [], []];
@@ -54,9 +52,6 @@ let ably;
 onMounted(async () => {
     ably = new Ably.Realtime.Promise("bNcHtg.6A3Skg:7GQVuc0J7PRA5E-eejCulzPmjPTZBkAkr69LXEDu6Eg")
     await ably.connection.once('connected');
-    console.log('Connected to Ably!');
-
-
 })
 
 
