@@ -1,42 +1,12 @@
-# Nuxt 3 Minimal Starter
+# Restaurant client
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repo has the client web-app a restaurant ordering system.
 
-## Setup
+## Tech stack:
++ FE: Vue3 and NuxtJS
++ UI: TailwindCSS and DaisyUI
++ Realtime: Ably WebSockets and WebHooks
++ DB: Upstash Redis
++ Storage Bucket: CloudFlare R2.
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Serverside Rendered
