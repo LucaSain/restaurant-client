@@ -50,7 +50,7 @@ const Order = async () => {
 let ably;
 
 onMounted(async () => {
-    ably = new Ably.Realtime.Promise("bNcHtg.6A3Skg:7GQVuc0J7PRA5E-eejCulzPmjPTZBkAkr69LXEDu6Eg")
+    ably = new Ably.Realtime.Promise("bNcHtg.KWMEIA:ZXfzLmAl8QK42old34hzFlVrTybsHUwViFmXyUISdpg")
     await ably.connection.once('connected');
 })
 
