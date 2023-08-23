@@ -1,11 +1,11 @@
 # Restaurant client
 
-This repo has the client web-app for a restaurant ordering system.
+A restaurant's digital menu.
 
 ## Tech stack:
-+ FE: Vue3 and NuxtJS
++ FE: Vue3 and Nuxt
 + UI: TailwindCSS and DaisyUI
-+ Realtime: Ably WebSockets and WebHooks
++ Realtime: Ably
 + DB: Upstash Redis
 + Storage Bucket: CloudFlare R2.
 
